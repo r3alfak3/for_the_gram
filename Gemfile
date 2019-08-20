@@ -39,7 +39,14 @@ gem 'popper_js', '< 2', '>= 1.14.3'
 gem 'bootstrap', '~> 4.3.1'
 gem 'simple_form' 
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'devise'
+gem 'font-awesome-sass'
+gem "figaro"
+gem 'carrierwave', '~> 1.0'
+gem "rmagick"
+gem "fog-aws"
+gem 'twitter-bootstrap-rails-confirm'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

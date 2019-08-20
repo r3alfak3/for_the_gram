@@ -1,6 +1,9 @@
-	<%= simple_form_for @gram, url: '#' do |f| %>
+<div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 card form bs">
+	<%= simple_form_for @gram, url: grams_path do |f| %>
 		<%= f.input :message %>
+		<%= f.input :picture %>
 		<br />
-		<%= f.submit "Create", class: 'btn btn-primary' %>
+		<%= f.submit "Post It!", class: 'btn my-btn' %>
 		<br />
 	<% end %>
+</div>

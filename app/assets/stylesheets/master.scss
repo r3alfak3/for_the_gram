@@ -1,1 +1,137 @@
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body { background-color: #49CCAD; font-family: 'Roboto', sans-serif; }
+
+.brand img {
+	max-height: 100px;
+}
+
+.top-nav {
+  font-family: 'Roboto Slab', serif;
+  background-color: white;
+  border-bottom-color: #edeeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  height: 120px;
+  padding-top: 10px;
+ }
+
+ .top-nav .add a {
+  font-weight: bold;
+  color: #38B092;
+  font-size: 16px;
+  text-decoration: none;
+  padding-left: 8px;
+ }
+
+ .top-nav .add a:hover {
+  color: #007376;
+}
+
+.bottom-nav {
+  font-family: 'Roboto Slab', serif;
+  background-color: #eeeeee;
+  border-top-color: #007275;
+  border-top-width: 3px;
+  border-top-style: solid;
+  height: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px
+ }
+
+ .bottom-nav .add a {
+  font-weight: bold;
+  color: #38B092;
+  font-size: 16px;
+  text-decoration: none;
+  padding-left: 8px;
+ }
+
+ .bottom-nav .add a:hover {
+  color: #007376;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: .25rem;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #e8e8e8;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.handle {
+  margin: 10px;
+  color: #125688;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card p, .card .message {
+  font-size: 18px;
+  margin: 20px;
+}
+
+.card.form {
+  padding: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
+input {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.my-btn {
+  background-color: #003A3B;
+  width: 100%;
+  border: none;
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+}
+
+.input.boolean {
+  margin-left: 18px;
+  margin-top: 5px;
+}
+
+.input.boolean label {
+  margin-top: 5px;
+  line-height: 44px;
+}
+
+.gram-actions a {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.comments {
+  padding: 20px;
+}
+
+.bs {
+  box-shadow: 5px 5px 0px rgba(100,100,100,.3);
+  -moz-box-shadow: 5px 5px 0px rgba(100,100,100,.3);
+  -webkit-box-shadow: 5px 5px 0px rgba(100,100,100,.3);
+}
+
+.tsa { text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); }
+
+.comment {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.comment_handle {
+  color: #125688;
+  font-weight: bold;
+  font-size: 18px;
+}
