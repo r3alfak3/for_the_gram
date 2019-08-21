@@ -1,46 +1,31 @@
-<div id="flex-content-container" class="top-nav bs">
-  <div class="row pt-2">
-    <div class="col-4 offset-2 text-left brand">
-      <%= link_to image_tag('postamatic.png'), root_path %>
+<nav class="navbar navbar-expand flex-nowrap top-nav sticky-top">
+    <span class="navbar-brand w-100"><%= link_to image_tag('postamatic.png'), root_path, class: 'brand' %></span>
+    <div class="navbar-collapse collapse w-100 justify-content-center" id="navbar5">
+      <ul class="navbar-nav">
+        <% if current_user %>
+          <li class="nav-item">
+            <%= link_to "#postModal", :class => "btn dark-g", "data-toggle" => "modal" do %>
+              <i class="fas fa-spray-can fa-3x"></i>
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to destroy_user_session_path, method: :delete, class: 'btn dark-g' do %>
+              <i class="fas fa-sign-out-alt fa-3x"></i>
+            <% end %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "#exampleModal", :class => "btn dark-g", "data-toggle" => "modal"  do %>
+             <i class="fas fa-sign-in-alt fa-3x"></i>
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "#regModal", :class => "btn dark-g", "data-toggle" => "modal"  do %>
+             <i class="fas fa-cash-register fa-3x"></i>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>   
     </div>
-    <nav class="navbar navbar-expand-lg navbar-inverse bg-inverse sticky-top float-left col-6">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbar">
-        <ul class="navbar-nav float-right">
-          <% if current_user %>
-            <li class="nav-item">
-              Welcome, <%= current_user.email %>.
-            </li>
-            <li class="nav-item">
-              <%= link_to new_gram_path, class: 'nav-link off-white-f droid-b' do %>
-                <i class="fas fa-user-ninja"></i>
-                New Post
-              <% end %>
-            </li>
-            <li class="nav-item">
-              <%= link_to destroy_user_session_path, method: :delete, class: 'nav-link off-white-f droid-b' do %>
-                <i class="fas fa-sign-out-alt"></i>
-                Sign Out
-              <% end %>
-            </li>
-          <% else %>
-            <li class="nav-item">
-              <%= link_to "#exampleModal", :class => "btn", "data-toggle" => "modal"  do %>
-               <i class="fas fa-sad-cry"></i>
-               Start Posting
-              <% end %>
-            </li>
-            <li class="nav-item">
-              <%= link_to new_user_registration_path, class: 'nav-link off-white-f droid-b' do %>
-               <i class="fas fa-cash-register"></i>
-               Register
-              <% end %>
-            </li>
-          <% end %>
-        </ul>   
-      </div>
-    </nav>
-  </div>
-</div>
+    <div class="w-100"><!--spacer--></div>
+</nav>

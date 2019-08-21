@@ -2,7 +2,7 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-body { background-color: #49CCAD; font-family: 'Roboto', sans-serif; }
+body { background-color: #49CCAD; font-family: 'Roboto Slab', sans-serif; }
 
 .brand img {
 	max-height: 100px;
@@ -14,11 +14,11 @@ body { background-color: #49CCAD; font-family: 'Roboto', sans-serif; }
   border-bottom-color: #edeeee;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  height: 120px;
+  height: 90px;
   padding-top: 10px;
  }
 
- .top-nav .add a {
+ .top-nav a {
   font-weight: bold;
   color: #38B092;
   font-size: 16px;
@@ -26,8 +26,8 @@ body { background-color: #49CCAD; font-family: 'Roboto', sans-serif; }
   padding-left: 8px;
  }
 
- .top-nav .add a:hover {
-  color: #007376;
+ .top-nav a:hover {
+  color: #49CCAD;
 }
 
 .bottom-nav {
@@ -41,7 +41,7 @@ body { background-color: #49CCAD; font-family: 'Roboto', sans-serif; }
   padding-bottom: 10px
  }
 
- .bottom-nav .add a {
+ .bottom-nav a {
   font-weight: bold;
   color: #38B092;
   font-size: 16px;
@@ -49,21 +49,22 @@ body { background-color: #49CCAD; font-family: 'Roboto', sans-serif; }
   padding-left: 8px;
  }
 
- .bottom-nav .add a:hover {
-  color: #007376;
+ .bottom-nav a:hover {
+  color: #49CCAD;
 }
 
 .card {
   background-color: #fff;
   border-radius: .25rem;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-  border: 1px solid #e8e8e8;
   margin-top: 40px;
   padding: 0;
+  overflow: hidden;
+  border: 0px;
 }
 
 .handle {
-  margin: 10px;
+  padding: 10px;
   color: #125688;
   font-weight: bold;
   font-size: 18px;
@@ -76,6 +77,17 @@ body { background-color: #49CCAD; font-family: 'Roboto', sans-serif; }
 
 .card.form {
   padding: 20px;
+}
+
+.dark-bg {
+  background: #003637;
+  height: 40px;
+  color: #eeeeee;
+}
+
+.dark-bg a:hover {
+  text-decoration: none;
+  color: #eeeeee;
 }
 
 label {
@@ -123,7 +135,7 @@ input {
   -webkit-box-shadow: 5px 5px 0px rgba(100,100,100,.3);
 }
 
-.tsa { text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); }
+.tsa { text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }
 
 .comment {
   font-size: 16px;
@@ -135,3 +147,15 @@ input {
   font-weight: bold;
   font-size: 18px;
 }
+
+#nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+ /* Colors */
+ .dark-g { color: #003637; }
+ .light-g { color: #ACFFEB; }
+
+  /* Fonts */
+  .bold { font-weight: 700;}

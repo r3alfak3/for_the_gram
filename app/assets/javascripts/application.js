@@ -13,7 +13,6 @@
 //= require jquery
 //= require rails-ujs
 //= require jquery-ui
-//= require twitter/bootstrap/rails/confirm
 //= require activestorage
 //= require turbolinks
 //= require popper

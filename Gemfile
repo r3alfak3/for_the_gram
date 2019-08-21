@@ -46,7 +46,6 @@ gem "figaro"
 gem 'carrierwave', '~> 1.0'
 gem "rmagick"
 gem "fog-aws"
-gem 'twitter-bootstrap-rails-confirm'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
