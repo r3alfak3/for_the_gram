@@ -41,7 +41,7 @@ class PictureUploader < CarrierWave::Uploader::Base
 
 version :square do
   process :auto_orient
-  process :resize_to_fill => [600, 600]
+  process :resize_to_fit => [800, 800]
 end
 
 def auto_orient
