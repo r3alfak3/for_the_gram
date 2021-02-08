@@ -43,7 +43,7 @@ gem 'jquery-ui-rails'
 gem 'devise'
 gem 'font-awesome-sass'
 gem 'figaro'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem 'rmagick', :require => 'rmagick'
 gem 'fog-aws'
 
